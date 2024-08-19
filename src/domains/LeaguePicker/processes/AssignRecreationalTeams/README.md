@@ -1,0 +1,28 @@
+# Assign Recreational Teams Naively
+- Coaches create assessments for all players using a float between 0 and 5.
+- Each player score determined by the average of all coach scores.
+- Every coach has a playersList and an assignedList.
+- For each player assigned to coach,
+    - put those players in the coach's assignedList.
+- Group the players assigned to players.
+- For each group,
+    - get the coaches with the least number of players in the assignedList
+    - randomly select one of the coaches with least number in assignedList
+    - assign the group into that coach's assignedList.
+- Remove the all players in all coach's assignedList from the mainList of players.
+- Sort the coaches however you want into coachList
+    - numbers in a hat
+    - draw straws
+    - randomize
+- Sort the mainList of players from highest to lowest score.
+- For each coach in sorted coachList,
+    - get nextPlayer in mainList with highest score
+    - if coach has none in their assignedList add player to coach's playersList
+    - else if coach has any player in their assignedList
+        - if nextPlayer has higher score than all others in coach's assignedList
+            - add nextPlayer to coach's playersList
+        - else move highest score player from assignedList to coach's playersList
+            - and begin checking if nextPlayer should go to the next coach
+- Verify that all players have teams
+- Verify that no team has two more players than any other team
+- Verify that total team score is similar to all other team scores
