@@ -1,6 +1,8 @@
+hoping to help with the most important problem in the world (how to organize people)
+
 # monolith
 
-Money can take many forms.  It can be dollars.  It can be a score.  It ban be feedback.  It always requires attention.
+Money is a means by which we evaluate and create prices.  Money can take many forms.  It can be dollars.  It can be a score.  It ban be feedback.  It always requires attention.
 
 ## User Stories
 
@@ -12,12 +14,14 @@ As a Christian for getting money, I want to setup my profile explaining the work
 
 ### Food Work
 As a transporter,
+- from God
 - from the sun, air, water, earth, heart, mind, strength and soul
 - from the tool maker
 - from the farm
 - from the chef
 - from the dishwasher
 
+As a tool maker,
 As a farmer,
 As a dishwasher,
 As a chef,
