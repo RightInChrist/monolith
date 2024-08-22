@@ -1,0 +1,12 @@
+{
+    "video_id": {
+        "model": "video"
+    },
+    "channel_id": {
+        "model": "channel"
+    },
+    "statements": {
+        "type": "list",
+        "model": "statement"
+    }
+}

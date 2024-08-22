@@ -1,0 +1,1 @@
+Data is stored somewhere.  At times it is stored on paper.  At other times it is carved into stone.  In modern times we move data so fast it only remains in an atom for a fraction of a second.

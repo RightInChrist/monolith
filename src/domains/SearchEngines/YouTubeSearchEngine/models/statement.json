@@ -1,0 +1,34 @@
+{
+    "text": {
+        "type": "string"
+    },
+    "video_id": {
+        "optional": true,
+        "reference": true,
+        "model": "video"
+    },
+    "channel_id": {
+        "optional": true,
+        "reference": true,
+        "model": "channel"
+    },
+    "person_id": {
+        "optional": true,
+        "reference": true,
+        "model": "person"
+    },
+    "audio_clip_id": {
+        "optional": true,
+        "reference": true,
+        "model": "audio_clip"
+    },
+    "video_clip_id": {
+        "optional": true,
+        "reference": true,
+        "model": "video_clip"
+    },
+    "timestamp": {
+        "type": "string",
+        "example": "1:32:11"
+    }
+}
