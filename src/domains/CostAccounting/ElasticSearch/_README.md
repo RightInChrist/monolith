@@ -1,7 +1,7 @@
 # ElasticSearch
 I want to allow people to use ElasticSearch to query data.
 
-# Options Considered
+## Options Considered
 - run ElasticSearch on my computer at my house using my electricity
     - depends on the cost and reliability of my electricity
     - depends on the cost and reliability of my computers

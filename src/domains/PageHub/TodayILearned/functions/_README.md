@@ -1,2 +1,2 @@
 # functions
-# Functions
+## Functions

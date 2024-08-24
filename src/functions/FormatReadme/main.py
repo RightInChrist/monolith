@@ -30,9 +30,16 @@ def ensure_first_line_format(file_path):
     else:
         # If the first line is not correctly formatted, update it
         lines.insert(0, required_first_line)
-        with open(file_path, 'w') as file:
-            file.writelines(lines)
         print(f"Updated the first line to: {required_first_line.strip()}")
+
+    # Update other lines that start with a single "#"
+    for i in range(1, len(lines)):  # Start from the second line
+        if lines[i].strip().startswith("# ") and not lines[i].strip().startswith("## "):
+            lines[i] = lines[i].replace("# ", "## ", 1)
+            print(f"Updated heading: {lines[i].strip()}")
+
+    with open(file_path, 'w') as file:
+        file.writelines(lines)
 
 def format_readme_files(directory):
     print(f'format readme files in directory {directory}')
