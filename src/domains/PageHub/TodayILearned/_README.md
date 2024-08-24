@@ -1,0 +1,1 @@
+I've heard wise people learn from other people's mistakes.  Maybe I'll be wise one day.  Until then, I've learned from my own mistakes.  And one day I decided to start sharing what I learned in message to my team which starts "today I learned".

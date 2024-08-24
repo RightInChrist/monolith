@@ -7,4 +7,3 @@ The `TranscriptionSpider` uses the `data/ric_formatted/videos.json` to extract t
 The Spider should place API responses into the `data/raw/{SpiderName}` location and check if the response already exists and is cached before making the API request to YouTube.
 
 Ultimately we end up with data in `data/index` which can be used for searching.
-
