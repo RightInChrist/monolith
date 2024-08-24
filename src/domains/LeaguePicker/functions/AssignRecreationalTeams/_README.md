@@ -1,3 +1,4 @@
+# AssignRecreationalTeams
 # Assign Recreational Teams Naively
 - Coaches create assessments for all players using a float between 0 and 5.
 - Each player score determined by the average of all coach scores.

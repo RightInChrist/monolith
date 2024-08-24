@@ -1,3 +1,4 @@
+# SearchEngines
 A spider crawls the web and collects new and existing data.
 
 The data is stored in an index with details like keywords and metadata.

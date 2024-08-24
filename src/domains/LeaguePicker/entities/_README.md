@@ -1,3 +1,4 @@
+# entities
 ## entities in the domain (LeaguePicker/TeamPicker)
 - Director
 - League

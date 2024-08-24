@@ -12,7 +12,30 @@ def get_directories(file_path):
 
     return file_directory, current_directory
 
-def rename_readme_files(directory):
+def ensure_first_line_format(file_path):
+    print(f"Ensure first line:{file_path}")
+    # Get the parent directory name
+    parent_directory_name = os.path.basename(os.path.dirname(os.path.abspath(file_path)))
+    
+    # Create the required first line
+    required_first_line = f"# {parent_directory_name}\n"
+    
+    # Read the current content of the file
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+    
+    # Check if the first line is correctly formatted
+    if lines and lines[0].strip() == required_first_line.strip():
+        print(f"The first line is already formatted correctly: {required_first_line.strip()}")
+    else:
+        # If the first line is not correctly formatted, update it
+        lines.insert(0, required_first_line)
+        with open(file_path, 'w') as file:
+            file.writelines(lines)
+        print(f"Updated the first line to: {required_first_line.strip()}")
+
+def format_readme_files(directory):
+    print(f'format readme files in directory {directory}')
     # Walk through the directory and its subdirectories
     for root, dirs, files in os.walk(directory):
         for file in files:
@@ -24,7 +47,8 @@ def rename_readme_files(directory):
                 # Rename the file
                 os.rename(old_file_path, new_file_path)
                 print(f"Renamed: {old_file_path} -> {new_file_path}")
-
+            if file == "_README.md":
+                ensure_first_line_format(os.path.join(root, "_README.md"))
 
 file_path = sys.argv[0]
 file_directory, current_directory = get_directories(file_path)
@@ -32,4 +56,4 @@ file_directory, current_directory = get_directories(file_path)
 print(f"Directory of this file: {file_directory}")
 print(f"Directory from which Python is being run: {current_directory}")
 
-rename_readme_files(f'{current_directory}/src/domains')
+format_readme_files(os.path.join(current_directory, 'src/domains'))

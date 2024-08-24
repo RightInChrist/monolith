@@ -1,3 +1,4 @@
+# CostAccounting
 We can pay dollars to use computers and electricity in various ways to help share the good news Jesus commissioned us, his servants, to perform.
 
 Tools have costs.  For example, a computer requires electricity.  And so the tools on computers come with a cost.  There is a limited supply of electricity and people will put a dollar price on the electricity and give the computer with its electricity to those who can pay enough dollar price in comparison to all the other people wanting to pay for the computer with its electricity.  Supply and demand.

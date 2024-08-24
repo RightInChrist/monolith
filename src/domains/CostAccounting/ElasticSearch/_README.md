@@ -1,3 +1,4 @@
+# ElasticSearch
 I want to allow people to use ElasticSearch to query data.
 
 # Options Considered
